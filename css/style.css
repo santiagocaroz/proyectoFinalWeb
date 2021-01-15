@@ -7,7 +7,17 @@ body{
 }
 header{
     background-color:rgb(106, 187, 207);
+    height:120px;
 }
+header section{
+    height:120px;
+    width: 450px;
+    display:block;
+    /* clear:both; */
+    padding:0;
+    float:left;
+}
+
 #logoInicio{
     width: 80px;
     height: 80px;
@@ -15,6 +25,7 @@ header{
     display: block;
     float:left;
     margin-right: 5px;
+    margin-left: 30px;
     
 }
 #logoInicio img{
@@ -41,6 +52,32 @@ header{
     font-size: 25px; 
 }
 nav{
+    box-sizing: border-box;
+    display: block;
+    width: 540px;
+    height: 120px;
+    float:left;
+    padding-top: 52px;
+}
+nav ul {
+   margin: 0;
+}
+nav li{
+    list-style:none;
+    /* margin-left:-50px; */
+    display:inline-block;
+    margin:0;
+    font-size:15px;   
+    margin-left: 27px;
+}
+
+nav li:first-child{
+    margin-left:-40px;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+section{
     clear:both;
 }
 
