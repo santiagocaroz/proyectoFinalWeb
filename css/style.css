@@ -1,3 +1,46 @@
-*{
+/* *{
     border:1px solid;
+} */
+body{
+    width:1000px;
+    margin:0 auto;
 }
+header{
+    background-color:rgb(106, 187, 207);
+}
+#logoInicio{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    display: block;
+    float:left;
+    margin-right: 5px;
+    
+}
+#logoInicio img{
+    width: 100%;
+    height: 100%;
+}
+#tituloInicio{
+    display: block;
+    width: 300px;
+    
+    float:left;
+    margin-top: 15px;
+    font-family: "Brush Script MT";
+    text-align: center;
+}
+
+
+#tituloInicio h1{
+    margin: 0;
+    font-size: 40px;    
+}
+#tituloInicio h5{
+    margin: 0;
+    font-size: 25px; 
+}
+nav{
+    clear:both;
+}
+
