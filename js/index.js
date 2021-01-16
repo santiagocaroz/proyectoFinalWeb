@@ -6,12 +6,15 @@ window.onload=function() {
     // icoMenu.className="active"
     icoMenu.onmouseover=showMenu;
     icoMenu.onmouseleave=hideMenu;
-    
+    menu[0].onmouseover=showMenu;
+    menu[0].onmouseleave=hideMenu;
 }
 
 function showMenu(){
-    this.className="active"
+    icoMenu.className="active"
+    menu[0].className="active"
 }
 function hideMenu(){
-    this.className="inactive"
+    icoMenu.className="inactive"
+    menu[0].className="inactive"
 }
