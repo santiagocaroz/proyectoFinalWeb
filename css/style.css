@@ -54,11 +54,14 @@ header section{
 nav{
     box-sizing: border-box;
     /* display: block; */
-    display:none
+    
     width: 540px;
     height: 120px;
     float:left;
     padding-top: 52px;
+}
+#icoMenu{
+    display: none;
 }
 nav ul {
    margin: 0;
@@ -97,7 +100,23 @@ section{
         margin-right: auto;
         /* border: solid; */
     }
-    
+    #icoMenu{
+        display: block;
+        position: absolute;
+        margin-top: -110px;
+        margin-left: 10px;
+        width:20px;
+    }
+   .active{
+        background-color:white;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    /* #icoMenu.inactive{
+        background-color: transparent;
+        padding: 3px;
+        border-radius: 2px;
+    } */
     nav{
         display:none;
     }
