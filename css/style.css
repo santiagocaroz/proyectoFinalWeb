@@ -78,6 +78,7 @@ nav li a{
     text-decoration: none;
     font-family: "Gill Sans MT";
     color: white;
+    transition:transform,font-size;
 }
 
 nav li:first-child{
@@ -89,7 +90,23 @@ nav li:last-child{
 section{
     clear:both;
 }
+nav li a.selected{
+    border-bottom:solid 2px white;
+    
+}
+nav li a.active{
+    display: block;
+    transform: scale(1.2);
+    transition-duration: 0.5s;  
+}
 
+header+section figure img{
+    width:100%;
+}
+
+header+section figure{
+    margin:0;
+}
 @media screen and (max-width:1000px){
     /* *{
         border: solid 1px;
@@ -122,6 +139,7 @@ section{
     }
     nav.active{
         display: block;
+        visibility: visible;
         background-color:rgb(156, 156, 156) ;
         padding:0;
         height:max-content;
@@ -129,6 +147,7 @@ section{
         position: fixed;
         margin-top:-80px;
         margin-left:10px;
+        transition-duration: 0.5s;
     }
     nav.active ul{
         margin: 0;
@@ -149,6 +168,23 @@ section{
         border:none;
     }
     nav.inactive{
-        display:none;
+        visibility:hidden;
+        /* display: none; */
+        transition:visibility;
+        display:block;
+        position: fixed;
+        margin-top:-80px;
+        margin-left:10px;
+        
+    }
+
+    nav li a.selected{
+        border:none;
+        font-weight:bold;
+    }
+    nav.active a.active{
+        transition-duration: 0.5s;
+        font-size: 18px;
+        transform: translateX(8px);
     }
 }
