@@ -1,6 +1,6 @@
-/* *{
+*{
     border:1px solid;
-} */
+}
 
 body{
     width:1000px;
@@ -117,6 +117,7 @@ section+section{
     margin: 0;
 }
 #servicios{
+    background-color:rgba(172, 172, 172, 0.5);
     margin-top: 20px;
 }
 section aside.left{
@@ -146,7 +147,7 @@ section main table img{
     clear:both;
     height: 350px;
 }
-section aside.rigth{
+section aside.right{
     width:49%;
     display: block;
     /* clear: both; */
@@ -162,7 +163,7 @@ section main.left{
 section main.left iframe{
     box-sizing: border-box;
     padding-left: 20px;
-    display:block;
+    /* display:block; */
     width: 500px;
     height: 350px;
 }
@@ -258,13 +259,13 @@ section main.left iframe{
         padding-bottom:5px;
         padding-top:5px;
     }
-    section main {
+    section main.left, section main.right{
         float: none;
         margin-left:auto;
         margin-right:auto;
         padding: 0;
         width: 100%;
-        
+        height: max-content;
     }
     main table{
         display:block;
@@ -276,5 +277,22 @@ section main.left iframe{
         display: inline-block;
         
     }
-}
+    #motivacion{
+        height: max-content;
+    }
 
+    section aside.right{
+        float: none;
+        width:100%;
+        
+        margin: 0;
+        /* border:solid; */
+        text-align:center;   
+    }
+    section main.left iframe{
+        width:100%;
+        margin: auto;
+        /* height: max-content; */
+    }
+   
+}
