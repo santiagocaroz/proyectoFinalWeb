@@ -1,12 +1,14 @@
 /* *{
     border:1px solid;
 } */
+
 body{
     width:1000px;
     margin:0 auto;
+    background-color: rgba(218, 218, 218,0.5);
 }
 header{
-    background-color:rgb(106, 187, 207);
+    background-color:rgb(95, 145, 158);
     height:120px;
 }
 header section{
@@ -87,7 +89,7 @@ nav li:first-child{
 nav li:last-child{
     margin-right: 0;
 }
-section{
+header+section{
     clear:both;
 }
 nav li a.selected{
@@ -106,7 +108,67 @@ header+section figure img{
 
 header+section figure{
     margin:0;
+    margin-top: 20px;
+    /* background-color: rgba(172, 172, 172, 0.5); */
 }
+
+section+section{
+    background-color:rgba(172, 172, 172, 0.5);
+    margin: 0;
+}
+#servicios{
+    margin-top: 20px;
+}
+section aside.left{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-top: 140px;
+    
+}
+section aside h2{
+    font-family: "Gill Sans MT";    
+    text-align:center;
+}
+section main.right{
+    margin: 0;
+    width: 74%;
+    float: right;
+    
+}
+section main table img{
+    width:160px;
+    height: 160px;
+    margin-left:15px;
+}
+#motivacion{
+    margin-top: 20px;
+    clear:both;
+    height: 350px;
+}
+section aside.rigth{
+    width:49%;
+    display: block;
+    /* clear: both; */
+    float: right;
+    margin-top: 140px;
+}
+section main.left{
+    margin: 0;
+    width: 50%;
+    float: left;
+}
+
+section main.left iframe{
+    box-sizing: border-box;
+    padding-left: 20px;
+    display:block;
+    width: 500px;
+    height: 350px;
+}
+
+
+
 @media screen and (max-width:1000px){
     /* *{
         border: solid 1px;
@@ -187,4 +249,32 @@ header+section figure{
         font-size: 18px;
         transform: translateX(8px);
     }
+    section aside.left{
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-bottom:5px;
+        padding-top:5px;
+    }
+    section main {
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+        width: 100%;
+        
+    }
+    main table{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:80%;
+    }
+    main table td{
+        display: inline-block;
+        
+    }
 }
+
