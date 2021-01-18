@@ -117,21 +117,27 @@ header+section figure{
 section+section{
     background-color:rgba(172, 172, 172, 0.5);
     margin: 0;
-    border: solid;
-    border-radius: 10px;
-    transition: transform;
+    border:solid;
+    border-radius:10px;
+    transition:transform; 
     transition-duration: 0.5s;
+    
 }
 
-section+section:hover,header+section figure:hover {
+section+section:hover, header+section figure:hover{
+
     transform:scale(1.1);
 }
+
+
 #servicios{
     background-color:rgba(172, 172, 172, 0.5);
     margin-top: 20px;
+
+    height: 350px;
     box-sizing: border-box;
     padding-top:10px;
-    height: 350px;
+
 }
 section aside.left{
     width: 25%;
@@ -290,7 +296,7 @@ section main.left iframe{
         display: inline-block;
         
     }
-    #motivacion{
+    #motivacion, #servicios{
         height: max-content;
     }
 
@@ -306,6 +312,9 @@ section main.left iframe{
         width:100%;
         margin: auto;
         /* height: max-content; */
+    }
+    section+section:hover, header+section figure:hover{
+        transform:scale(0.9);
     }
    
 }
