@@ -115,6 +115,8 @@ header+section figure{
 section+section{
     background-color:rgba(172, 172, 172, 0.5);
     margin: 0;
+    border:solid;
+    border-radius:10px;
 }
 #servicios{
     background-color:rgba(172, 172, 172, 0.5);
