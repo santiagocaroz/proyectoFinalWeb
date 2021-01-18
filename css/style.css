@@ -122,7 +122,7 @@ section+section{
     
 }
 
-section+section:hover{
+section+section:hover, header+section figure:hover{
     transform:scale(1.1);
 }
 
@@ -131,6 +131,8 @@ section+section:hover{
     background-color:rgba(172, 172, 172, 0.5);
     margin-top: 20px;
     height: 350px;
+    box-sizing: border-box;
+    padding-top:10px;
 }
 section aside.left{
     width: 25%;
@@ -305,6 +307,9 @@ section main.left iframe{
         width:100%;
         margin: auto;
         /* height: max-content; */
+    }
+    section+section:hover, header+section figure:hover{
+        transform:scale(0.9);
     }
    
 }
