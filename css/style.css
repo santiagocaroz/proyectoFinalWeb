@@ -126,6 +126,11 @@ section+section{
 section+section:hover,header+section figure:hover {
     transform:scale(1.1);
 }
+
+#servicios:hover{
+    transform:none;
+}
+
 #servicios{
     background-color:rgba(172, 172, 172, 0.5);
     margin-top: 20px;
@@ -133,6 +138,16 @@ section+section:hover,header+section figure:hover {
     padding-top:10px;
     height: 350px;
 }
+
+#servicios td:hover{
+    transform:scale(1.1);
+}
+#servicios td img{
+   border-radius: 25%;
+   box-shadow:5px 5px 5px black; 
+}
+
+
 section aside.left{
     width: 25%;
     display: block;
@@ -308,4 +323,53 @@ section main.left iframe{
         /* height: max-content; */
     }
    
+}
+
+.carousel-inner img{
+    width: 100%;
+}
+.carousel-caption h1{
+    text-shadow: 5px 5px 5px black;
+    font-size: 3em;
+}
+
+footer{
+    background-color:rgb(95, 145, 158);
+    clear:both;
+    height: 370px;
+}
+
+#interes, #serv{
+    float: left;
+    width: 32%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#interes{
+    padding-top: 50px;
+}
+
+#serv p{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+#contacto{
+    width: 32%;
+    padding: 40px;
+    text-align: center;
+    float: right;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+footer img{
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px black;
+    width: 50px;
+    height: 50px;
 }
