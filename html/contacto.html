@@ -23,7 +23,7 @@
 	<header>			
 			<section>
 				<figure id="logoInicio">
-					<img src="..\img\logo.jpg" alt="logo"> 
+					<a href="index.html"><img src="..\img\logo.jpg" alt="logo"> </a> 
 				</figure>
 				<div id="tituloInicio">
 					<h1>Elizabeth Solarte </h1>
@@ -34,50 +34,53 @@
 
 			<nav class="inactive">
 				<ul>
-					<li><a href="index.html" class="selected">INICIO</a></li> 
+					<li><a href="index.html" >INICIO</a></li> 
 					<li><a href="nosotros.html">NOSOTROS</a></li> 
 					<li><a href="clientes.html">CLIENTES</a></li> 
 					<li><a href="renta19.html">RENTA 2019</a></li> 
-					<li><a href="contacto.html">CONTÁCTENOS</a></li>
+					<li><a href="contacto.html" class="selected">CONTÁCTENOS</a></li>
 				</ul>
 			</nav>
 		
 	</header>
 	
-	<section>
-		<h1> Envíanos un mensaje</h1>
+	<section id="con">
+		<h1 align="center"> Envíanos un mensaje</h1>
 		<div id="llamada_foto"> <img src="../img/call.jpg"></div>
-		<div id="formulario">
+		<div id="formulario_contacto">
 
 			<form>
-			<label> Departamento al que desea escribirle: *</label>
+			<label> Departamento al que desea escribirle: *</label> 
 			<select name="Departamento"> 
 				<option value="1"> Administración </option>
 				<option value="2"> Secretaría </option>
 				<option value="3"> Informática </option>
 				<option value="4"> Dirección </option>
 			</select> 
+			<br> <br>
+			<label>Nombre(s) y/o Apellido(s): *</label>  
+			<input type="text" name="nombre" value=""    placeholder="Digite el nombre(s) y/o apellido(s)" maxlength="100" size="20"><br>
 			<br>
-			<label>Nombre(s) y/o Apellido(s): *</label>  <br> 
-			<input type="text" name="nombre" value=""    placeholder="Digite el nombre(s) y/o apellido(s)" maxlength="100" size="70"><br>
+			<label>Correo electrónico: *</label> 
+			<input type="text" name="email" value=""    placeholder="Digite su correo electrónico" maxlength="100" size="20"><br>
 			<br>
-			<label>Correo electrónico: *</label>  <br> 
-			<input type="text" name="email" value=""    placeholder="Digite su correo electrónico" maxlength="100" size="70"><br>
+			<label>Telefono: *</label> 
+			<input type="number" name="telefono" value=""   placeholder="Digite su número de telefono" maxlength="100" size="20"><br>
 			<br>
-			<label>Telefono: *</label>  <br>
-			<input type="number" name="telefono" value=""   placeholder="Digite su número de telefono" maxlength="100" size="70"><br>
-			<br>
-			<label>Celular: *</label>  <br>
+			<label>Celular: *</label>  
 			<input type="number" name="celular" value=""   placeholder="Digite su número de celular" maxlength="100" size="70"><br>
 			<br>
 			<label> País: *</label>
 			<select name="Departamento"> 
-				<option value="1"> Colombía </option>
-				<option value="2"> Ecuador </option>
+				<option value="1"> Pasto </option>
+				<option value="2"> Ipiales </option>
+				<option value="3"> Túquerres </option>
+				<option value="4"> Tumaco </option>
+				<option value="5"> Tulcán </option>
 			</select> 
-			<br>
+			<br> <br>
 			<label>Descripción:</label> <br>
-			<textarea name="Descripción" rows="10" cols="80" maxlength="=20000" ></textarea>
+			<textarea name="Descripción" rows="10" cols="60" maxlength="=1000" ></textarea>
 			<br><br>
 			
 			<button class="btn btn-primary">Enviar</button>
@@ -89,7 +92,22 @@
 	</section>
 
 	<footer>
-		<div class="art-layaut-cell responsive-tablet-layout-cell" style="padding:10px; width: 25%;">
+
+		<div id="serv" class="art-layaut-cell responsive-tablet-layout-cell">
+			<h4>SERVICIOS</h4>
+			<p>Consultoría de impuestos</p>
+			<p>Asesoría Financiera y Contable</p>
+			<p>Control interno</p>
+			<p>Servicio Minero</p>
+			<p>Revisoria fiscal</p>
+			<p>Outsourcing contable</p>
+			<p>servicios tributarios</p>
+			<p>Auditorias basadas en NIAS</p>
+			<p>constitución de sociedades</p>
+			<p>NIIF-IFRS</p>
+			<p>Declaraciones de renta</p>
+		</div>
+		<div id="interes" class="art-layaut-cell responsive-tablet-layout-cell">
 			<h4>SITIOS DE INTERES</h4>
 			<p>RUCOM</p>
 			<P>Calendario Tributario 2019</P>
@@ -97,16 +115,7 @@
 			<a href="https://www.instagram.com/"><img src="..\img\inst.jpg" height="30px" width="30px" alt="facebook"></a>
 		</div>
 
-		<div class="art-layaut-cell responsive-tablet-layout-cell" style="padding:10px; width: 25%;">
-			<h4>SERVICIOS</h4>
-
-			<p>Consultoría de impuestos</p>
-			<p>Asesoría Financiera y Contable</p>
-			<p>Control interno. Revisoria Fiscal y Auditoria</p>
-			<p>Servicio Minero</p>
-		</div>
-
-		<div class="art-layaut-cell responsive-tablet-layout-cell" style="padding:10px; width: 25%;">
+		<div id="contacto" class="art-layaut-cell responsive-tablet-layout-cell">
 			<h4>CONTACTO</h4>
 			<p>calle 55A N° 13-6</p>
 			<p>Barrio las cuadras</p>
