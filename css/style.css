@@ -334,14 +334,15 @@ section main.left iframe{
 }
 
 footer{
-    background-color:rgb(95, 145, 158);
     clear:both;
+    background-color:rgb(95, 145, 158);
     height: 370px;
+    width: 100%;
 }
 
 #interes, #serv{
     float: left;
-    width: 32%;
+    width:25%;
     padding: 30px;
     text-align: center;
     color: white;
@@ -359,7 +360,7 @@ footer{
 }
 
 #contacto{
-    width: 32%;
+    width: 25%;
     padding: 40px;
     text-align: center;
     float: right;
@@ -372,4 +373,101 @@ footer img{
     box-shadow: 5px 5px 5px black;
     width: 50px;
     height: 50px;
+}
+
+
+/*--------   desde aquí para la página de "Nosotros" */
+
+#MYV{
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+#img_MYV{
+    width: 45%;
+    float: right;
+}
+
+#img_MYV fieldset, #img_VYP fieldset{
+    border:none;
+    margin: 50px;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+}
+#img_MYV fieldset:hover, #img_VYP fieldset:hover{
+    transform:scale(1.3); 
+}
+
+#img_VYP{
+    width: 45%;
+    float: left;
+}
+
+#VYP{
+    width: 50%;
+    float: right;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+#VYP fieldset{
+    border:none;
+}
+
+#VYP fieldset li{
+    list-style: none;
+}
+
+
+
+/*   Desde aquí para la página de "clientes"*/
+
+#perfil,#clientes{
+    margin:50px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(255,255,255);
+    height:400px;
+}
+
+
+#c1,#c2,#c3,#c4,#c6,#c7,#c8,#c9{
+    width: 25%; 
+    float: left;
+    margin-left: 40px;
+}
+
+
+/*   Desde aquí para la página de "contacto"*/
+
+#con{
+    border: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+    background-color:rgb(255,255,255);
+    padding: 20px; 
+    height: 500px;
+}
+
+#llamada_foto{
+    width: 40%; 
+    float: left;
+
+}
+
+#formulario_contacto{
+    width: 50%; 
+    float: right;
+    margin-right: 50px;
+}
+
+button{
+    margin-left: 200px;
 }
