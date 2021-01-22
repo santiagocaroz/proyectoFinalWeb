@@ -7,8 +7,8 @@ window.onload=function() {
     entradas[3].onkeypress=validarInNum;
    
     entradas[1].onblur=validarEmail;
-    entradas[2].onkeypress=validarInNum;
-    entradas[3].onkeypress=validarInNum;
+    entradas[2].onblur=validarTel;
+    entradas[3].onblur=validarCel;
 }
 
 function validarInName(event){
@@ -40,6 +40,22 @@ function validarEmail(){
     if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(this.value))) {
        console.log("repetir")
       }
+    else{
+        console.log(this.value)
+    }
+}
+function validarTel(){
+    if(!(/^\d{7}$/.test(this.value))){
+        console.log("repetir")
+    }
+    else{
+        console.log(this.value)
+    }
+}
+function validarCel(){
+    if(!(/^\d{11}$/.test(this.value))){
+        console.log("repetir")
+    }
     else{
         console.log(this.value)
     }
