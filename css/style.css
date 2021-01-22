@@ -377,6 +377,15 @@ footer h5{
     font-weight: normal;
 }
 
+label.error.inact{
+    display: none;
+}
+label.error.act{
+    color: red;
+    font-style: italic;
+    font-size:13px;
+}
+
 @media screen and (max-width:1000px){
     /* *{
         border: solid 1px;

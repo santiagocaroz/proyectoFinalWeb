@@ -1,6 +1,9 @@
 var entradas;
+var errorMsg
 window.onload=function() {
     entradas=document.getElementsByTagName("input")
+    errorMsg=document.getElementsByClassName("error")
+
     entradas[0].onkeypress=validarInName;
     entradas[1].onkeypress=validarInEmail;
     entradas[2].onkeypress=validarInNum;
@@ -9,6 +12,8 @@ window.onload=function() {
     entradas[1].onblur=validarEmail;
     entradas[2].onblur=validarTel;
     entradas[3].onblur=validarCel;
+
+
 }
 
 function validarInName(event){
@@ -38,10 +43,12 @@ function validarInNum(event){
 function validarEmail(){
     
     if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(this.value))) {
-       console.log("repetir")
+    //    console.log("repetir")
+        errorMsg[0].className="error act"
       }
     else{
         console.log(this.value)
+        errorMsg[0].className="error inact"
     }
 }
 function validarTel(){
