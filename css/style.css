@@ -201,152 +201,6 @@ section main.left iframe{
     height: 350px;
 }
 
-
-
-@media screen and (max-width:1000px){
-    /* *{
-        border: solid 1px;
-    } */
-   body{
-       width:100%;
-   }
-    header section{
-        float:none;
-        margin-left: auto;
-        margin-right: auto;
-        /* border: solid; */
-    }
-    #icoMenu{
-        display: block;
-        position: fixed;
-        margin-top: -110px;
-        margin-left: 10px;
-        width:30px;
-        z-index: 100;
-    }
-    #icoMenu.active{
-        background-color:white;
-        
-        padding: 3px;
-        border-radius: 2px;
-    }
-    #icoMenu.inactive{
-        background-color: transparent;
-        padding: 3px;
-        border-radius: 2px;
-    }
-    nav.active{
-        display: block;
-        visibility: visible;
-        background-color:rgb(156, 156, 156) ;
-        padding:0;
-        height:max-content;
-        width:150px;
-        position: fixed;
-        margin-top:-80px;
-        margin-left:10px;
-        transition-duration: 0.5s;
-        z-index: 100;
-    }
-    nav.active ul{
-        margin: 0;
-        /* padding: 0; */
-    }
-    nav.active li{
-        display: block;
-        margin-left: -40px;
-        padding-left: 5px;
-        margin-bottom: 0;
-        margin-top:2px;
-        margin-bottom: 2px;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        border-bottom: solid 1px rgb(226, 223, 223);
-    }
-    nav.active li:last-child{
-        border:none;
-    }
-    nav.inactive{
-        visibility:hidden;
-        /* display: none; */
-        transition:visibility;
-        display:block;
-        position: fixed;
-        margin-top:-80px;
-        margin-left:10px;
-        
-    }
-
-    nav li a.selected{
-        border:none;
-        font-weight:bold;
-    }
-    nav.active a.active{
-        transition-duration: 0.5s;
-        font-size: 18px;
-        transform: translateX(8px);
-    }
-    section aside.left{
-        float: none;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: -20px;
-        margin-bottom: -20px;
-        padding-bottom:5px;
-        padding-top:5px;
-    }
-    section main.left, section main.right{
-        float: none;
-        margin-left:auto;
-        margin-right:auto;
-        padding: 0;
-        width: 100%;
-        height: max-content;
-    }
-    main table{
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-    }
-    main table td{
-        display: inline-block;
-        
-    }
-    #motivacion, #servicios{
-        height: max-content;
-    }
-
-    section aside.right{
-        float: none;
-        width:100%;
-        
-        margin: 0;
-        /* border:solid; */
-        text-align:center;   
-    }
-    section main.left iframe{
-        width:100%;
-        margin: auto;
-        /* height: max-content; */
-    }
-    section+section:hover, header+section figure:hover{
-        transform:scale(0.9);
-    }
-    footer{
-        clear:both;
-        display:block;
-        float: none;
-        background-color:rgb(95, 145, 158);
-        height:max-content ;
-        width: 100%;
-        font-family: "Gill Sans MT";
-        font-size:16px;
-        font-weight:normal;
-    }
-   
-}
-
 .carousel-inner img{
     width: 100%;
 }
@@ -500,13 +354,14 @@ footer img{
 #llamada_foto{
     width: 40%; 
     float: left;
-
 }
 
 #formulario_contacto{
     width: 50%; 
-    float: right;
-    margin-right: 50px;
+    display: block;
+    float: left;
+    /* float: right; */
+    margin-left: 50px;
 }
 
 button{
@@ -520,4 +375,177 @@ button{
 footer h5{
     font-size: 25px;   
     font-weight: normal;
+}
+
+@media screen and (max-width:1000px){
+    /* *{
+        border: solid 1px;
+    } */
+   body{
+       width:100%;
+   }
+    header section{
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: solid; */
+    }
+    #icoMenu{
+        display: block;
+        position: fixed;
+        margin-top: -110px;
+        margin-left: 10px;
+        width:30px;
+        z-index: 100;
+    }
+    #icoMenu.active{
+        background-color:white;
+        
+        padding: 3px;
+        border-radius: 2px;
+    }
+    #icoMenu.inactive{
+        background-color: transparent;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    nav.active{
+        display: block;
+        visibility: visible;
+        background-color:rgb(156, 156, 156) ;
+        padding:0;
+        height:max-content;
+        width:150px;
+        position: fixed;
+        margin-top:-80px;
+        margin-left:10px;
+        transition-duration: 0.5s;
+        z-index: 100;
+    }
+    nav.active ul{
+        margin: 0;
+        /* padding: 0; */
+    }
+    nav.active li{
+        display: block;
+        margin-left: -40px;
+        padding-left: 5px;
+        margin-bottom: 0;
+        margin-top:2px;
+        margin-bottom: 2px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: solid 1px rgb(226, 223, 223);
+    }
+    nav.active li:last-child{
+        border:none;
+    }
+    nav.inactive{
+        visibility:hidden;
+        /* display: none; */
+        transition:visibility;
+        display:block;
+        position: fixed;
+        margin-top:-80px;
+        margin-left:10px;
+        
+    }
+
+    nav li a.selected{
+        border:none;
+        font-weight:bold;
+    }
+    nav.active a.active{
+        transition-duration: 0.5s;
+        font-size: 18px;
+        transform: translateX(8px);
+    }
+    section aside.left{
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-bottom:5px;
+        padding-top:5px;
+    }
+    section main.left, section main.right{
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+        width: 100%;
+        height: max-content;
+    }
+    main table{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:80%;
+    }
+    main table td{
+        display: inline-block;
+        
+    }
+    #motivacion, #servicios{
+        height: max-content;
+    }
+
+    section aside.right{
+        float: none;
+        width:100%;
+        
+        margin: 0;
+        /* border:solid; */
+        text-align:center;   
+    }
+    section main.left iframe{
+        width:100%;
+        margin: auto;
+        /* height: max-content; */
+    }
+    section+section:hover, header+section figure:hover{
+        transform:scale(0.9);
+    }
+    footer{
+        clear:both;
+        display:block;
+        float: none;
+        background-color:rgb(95, 145, 158);
+        height:max-content ;
+        width: 100%;
+        font-family: "Gill Sans MT";
+        font-size:16px;
+        font-weight:normal;
+    }
+    #con{
+        height: max-content;
+        padding: 0;
+    }
+    #formulario_contacto{
+        /* width: 50%;  */
+        /* border: solid; */
+        width:100%;
+        display:block;
+        float:none;
+        clear: both;
+        margin:0;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left: 40px;
+        /* background-color: green; */
+    }
+    #formulario_contacto button{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #llamada_foto{
+        float:none;
+        clear: both;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+   
 }
