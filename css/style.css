@@ -330,6 +330,17 @@ section main.left iframe{
     section+section:hover, header+section figure:hover{
         transform:scale(0.9);
     }
+    footer{
+        clear:both;
+        display:block;
+        float: none;
+        background-color:rgb(95, 145, 158);
+        height:max-content ;
+        width: 100%;
+        font-family: "Gill Sans MT";
+        font-size:16px;
+        font-weight:normal;
+    }
    
 }
 
@@ -346,6 +357,9 @@ footer{
     background-color:rgb(95, 145, 158);
     height:400px ;
     width: 100%;
+    font-family: "Gill Sans MT";
+    font-size:16px;
+    font-weight:normal;
 }
 
 #serv{
@@ -498,4 +512,8 @@ button{
     color: white;
     font-weight: bold;
     
+}
+footer h5{
+    font-size: 25px;   
+    font-weight: normal;
 }
