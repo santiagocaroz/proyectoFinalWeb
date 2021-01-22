@@ -348,18 +348,32 @@ footer{
     width: 100%;
 }
 
-#interes, #serv{
+#serv{
+    display:block;
     float: left;
     width:25%;
-    padding: 30px;
+    padding-top: 50px;
+    padding-left:30px ;
     text-align: center;
     color: white;
+    
+}
+#interes{
+    
+    width:25%;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
     /* text-shadow: 5px 5px 5px black; */
 }
 
-#interes{
+
+
+/* #interes{
     padding-top: 50px;
-}
+} */
 
 #serv p{
     padding-bottom: 0px;
@@ -369,7 +383,8 @@ footer{
 
 #contacto{
     width: 25%;
-    padding: 40px;
+    padding-top: 50px;
+    padding-right: 30px;
     text-align: center;
     float: right;
     color: white;
@@ -478,4 +493,9 @@ footer img{
 
 button{
     margin-left: 200px;
+}
+#contacto a{
+    color: white;
+    font-weight: bold;
+    
 }
