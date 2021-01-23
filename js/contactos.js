@@ -7,6 +7,7 @@ window.onload=function() {
     listCity=document.getElementsByTagName("select")[1]
     otraCiudad=document.getElementsByClassName("otraCiudad")
     enviar=document.getElementsByTagName("button")[0]
+    navigator.geolocation.getCurrentPosition(visualizarPosicion,errorPosicion);
     // console.log(listCity)
     entradas[0].onkeypress=validarInName;
     entradas[1].onkeypress=validarInEmail;
@@ -118,4 +119,22 @@ function validarInfo(){
     else{
         enviar.disabled=false;
     }
+}
+function visualizarPosicion(position){
+    // var posUser=new google.maps.LatLng(position.coords.latitude,position.coords.longitude)
+    opcionesMapa={
+        center:{lat:1.2200153908825608 ,lng:-77.29042613505315},
+        zoom:15, 
+        // center:posUser,
+        fullscreenControl:false
+    }
+    mapa=new google.maps.Map(document.getElementById("mapa"),opcionesMapa);
+    var opcionesMarca={
+        position:{lat:1.2200153908825608 ,lng:-77.29042613505315},
+        map:mapa
+    }
+    var Marker=new google.maps.Marker(opcionesMarca)
+}
+function errorPosicion(){
+    alert("Esta pagina requiere ubicación");
 }
