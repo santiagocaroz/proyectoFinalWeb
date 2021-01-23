@@ -123,11 +123,11 @@ section+section{
     transition-duration: 0.5s;
     
 }
-
+/* 
 section+section:hover, header+section figure:hover{
 
     transform:scale(1.1);
-}
+} */
 
 #servicios:hover{
     transform:none;
@@ -340,7 +340,7 @@ footer img{
 
 
 #c1,#c2,#c3,#c4,#c6,#c7,#c8,#c9{
-    width: 25%; 
+    width: 20%; 
     display: inline-block;
     margin-left: 40px;
 }
@@ -524,9 +524,9 @@ label.error.act{
         margin: auto;
         /* height: max-content; */
     }
-    section+section:hover, header+section figure:hover{
+    /* section+section:hover, header+section figure:hover{
         transform:scale(0.9);
-    }
+    } */
     footer{
         clear:both;
         display:block;
