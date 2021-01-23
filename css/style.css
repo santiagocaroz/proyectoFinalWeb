@@ -572,11 +572,52 @@ fieldset{
         float:none;
         clear: both;
         margin-left:auto;
-        margin-right:auto;
-        
+        margin-right:auto;  
     }
-   
-}@media screen and (max-width:720px){
+    #MYV{
+        width: 90%;
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+    }
+    
+    #img_MYV{
+        width: 300px;
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+    }
+    #img_MYV fieldset{
+        margin:0;
+        /* padding: 0; */
+    }
+    #img_VYP{
+        width: 300px;
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+    }
+    
+    #VYP{
+        width: 90%;
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+    }
+    
+    #VYP fieldset, #img_VYP{
+        margin:0;
+    }
+    
+    #VYP fieldset li{
+        list-style: none;
+    }
+}
+@media screen and (max-width:720px){
     footer{
         height: 550px;
     }
