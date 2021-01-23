@@ -576,4 +576,8 @@ fieldset{
         
     }
    
+}@media screen and (max-width:720px){
+    footer{
+        height: 550px;
+    }
 }
