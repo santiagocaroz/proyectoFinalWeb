@@ -577,3 +577,22 @@ fieldset{
     }
    
 }
+
+/*   Desde aquí para la página de "OUTSOURCING"*/
+
+#outsour{
+    padding: 20px;
+    background-color: rgb(255,255,255)
+}
+
+#outsour p{
+    margin-bottom: -15px;
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+#outsour ul{
+    margin-top: 50px;
+}
