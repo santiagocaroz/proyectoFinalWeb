@@ -60,34 +60,41 @@
 			</select> 
 			<br> <br>
 			<label>Nombre(s) y/o Apellido(s): *</label>  
-			<input type="text" name="nombre" value=""    placeholder="Digite el nombre(s) y/o apellido(s)" required maxlength="100" size="20"><br>
+			<input type="text" name="nombre"     placeholder="Digite el nombre(s) y/o apellido(s)" required maxlength="100" size="20"><br>
 			<br>
 			<label>Correo electrónico: *</label> 
-			<input type="text" name="email" value=""    placeholder="Digite su correo electrónico"  maxlength="100" size="20"><br>
+			<input type="text" name="email"    placeholder="Digite su correo electrónico"  maxlength="100" size="20"><br>
 			<label class="error inact">Digite un correo valido</label>
 			<br>
 			<label>Telefono: </label> 
-			<input type="number" name="telefono" value=""   placeholder="Digite su número de telefono" required maxlength="100" size="20"><br>
+			<input type="number" name="telefono"   placeholder="Digite su número de telefono" required maxlength="100" size="20"><br>
 			<label class="error inact">Digite un número de telefono valido sin espacios</label>
 			<br>
 			<label>Celular: *</label>  
-			<input type="number" name="celular" value=""   placeholder="Digite su número de celular" required maxlength="100" size="70"><br>
+			<input type="number" name="celular"   placeholder="Digite su número de celular" required maxlength="100" size="70"><br>
 			<label class="error inact">Digite un número de celular valido sin espacios</label>
 			<br>
-			<label> País: *</label>
-			<select name="Departamento"> 
+			<label> Ciudad: *</label>
+			<select name="Ciudad"> 
+				<option value="0"> Seleccione ciudad </option>
 				<option value="1"> Pasto </option>
 				<option value="2"> Ipiales </option>
 				<option value="3"> Túquerres </option>
 				<option value="4"> Tumaco </option>
 				<option value="5"> Tulcán </option>
-			</select> 
-			<br> <br>
+				<option value="6"> Otra </option>
+			</select> <br>
+			<label class="error inact">Seleccione una ciudad</label>
+			<br>
+			<label class="otraCiudad inact">Otra ciudad: *</label>  
+			<input class="otraCiudad inact" type="text" name="otraCiudad" value=""    placeholder="Digite nombre de la ciudad" maxlength="100" size="20"><br>
+			<br>
+			
 			<label>Descripción:</label> <br>
 			<textarea name="Descripción" rows="10" cols="60" maxlength="=1000" ></textarea>
 			<br><br>
 			
-			<button class="btn btn-primary">Enviar</button>
+			<button class="btn btn-primary"  >Enviar</button>
 			</div>
 			</form>
 		</div>

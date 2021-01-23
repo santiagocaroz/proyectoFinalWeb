@@ -385,7 +385,12 @@ label.error.act{
     font-style: italic;
     font-size:13px;
 }
-
+.otraCiudad.inact{
+    display:none;
+}
+.otraCiudad.act{
+    display:inline;
+}
 @media screen and (max-width:1000px){
     /* *{
         border: solid 1px;
