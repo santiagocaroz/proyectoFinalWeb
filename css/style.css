@@ -325,17 +325,23 @@ footer img{
 /*   Desde aquí para la página de "clientes"*/
 
 #perfil,#clientes{
-    margin:50px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin:50px; */
     padding: 20px;
+    border: none;
     font-size: 20px;
     background-color: rgb(255,255,255);
-    height:400px;
+    height:max-content;
+    font-family: "Gill Sans MT";
 }
 
 
 #c1,#c2,#c3,#c4,#c6,#c7,#c8,#c9{
     width: 25%; 
-    float: left;
+    display: inline-block;
     margin-left: 40px;
 }
 
