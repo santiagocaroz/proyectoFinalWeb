@@ -397,6 +397,14 @@ label.error.act{
 .otraCiudad.act{
     display:inline;
 }
+
+fieldset{
+    background: white;
+    border: solid;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: "Gill Sans MT";
+}
 @media screen and (max-width:1000px){
     /* *{
         border: solid 1px;
